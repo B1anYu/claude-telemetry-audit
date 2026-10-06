@@ -1,0 +1,21 @@
+.omp
+
+HANDOFF.md
+readme-readme.md
+
+__pycache__/
+*.pyc
+.DS_Store
+archive/
+
+# ---- 逆向产物一律不入库 ----
+# 解包树、切分模块、反编译源、原生转储只存在于本地工作树；
+# 重建规则见 AGENTS.md 的 Reproduction Path 一节。
+cli/
+desktop/
+telemetry/native/
+
+# Android 素材（APK 原始件与解包/反编译产物不入库；结论见 telemetry/android.md）
+claude.apk*
+*.xapk*
+android/
